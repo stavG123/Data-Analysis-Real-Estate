@@ -1,19 +1,26 @@
 import sqlite3
-import pandas as pd # type: ignore
-import matplotlib.pyplot as plt # type: ignore
+import pandas as pd
 from pathlib import Path
+# import matplotlib.pyplot as plt  # optional; not used
 
-
-# Resolve paths relative to this file, not the working directory
+# Resolve paths based on this file location (works from any CWD)
 current_file_path = Path(__file__).resolve()
 project_root_path = current_file_path.parents[1]
+
 excel_directory_path = project_root_path / "Excel"
-cvs_input_file_path = excel_directory_path / "csv/data.csv"
+csv_input_file_path = excel_directory_path / "data.csv"
 output_csv_file_path = excel_directory_path / "top_10_expensive_houses.csv"
-database_file_path = current_file_path.parent / "realestate.db"
+
+# Put the DB in the project (not inside Excel)
+database_file_path = project_root_path / "py" / "realestate.db"
+
+# Safety check so path issues are obvious
+print("Looking for CSV at:", csv_input_file_path)
+if not csv_input_file_path.exists():
+    raise FileNotFoundError(f"Missing file: {csv_input_file_path}")
 
 # Load CSV
-df = pd.read_csv(cvs_input_file_path)
+df = pd.read_csv(csv_input_file_path)
 
 # Connect to SQLite (creates file if not exists)
 conn = sqlite3.connect(str(database_file_path))
@@ -34,10 +41,8 @@ LIMIT 10;
 """
 result = pd.read_sql(query, conn)
 print(result)
-# Save the results to a new CSV file
-#result.to_csv(output_csv_file_path, index=False)
 
-# Close the connection
+# Optionally save results:
+# result.to_csv(output_csv_file_path, index=False)
+
 conn.close()
-
-
