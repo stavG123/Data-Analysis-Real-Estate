@@ -1,0 +1,7 @@
+Excel/data.csv
+*.db
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
