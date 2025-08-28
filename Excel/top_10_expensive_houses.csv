@@ -1,0 +1,11 @@
+price,bed,bath,house_size,city,state,zip_code,status,brokered_by
+2147483600.0,2.0,2.0,885.0,International,California,,for_sale,23826.0
+1000000000.0,,,,Eureka,Kansas,67045.0,for_sale,104341.0
+875000000.0,9.0,2.0,2440.0,Bronx,New York,10458.0,for_sale,100472.0
+515000000.0,2.0,2.0,1048.0,San Diego,California,92119.0,for_sale,13872.0
+295000000.0,21.0,49.0,,Los Angeles,California,90077.0,sold,16829.0
+281500000.0,3.0,3.0,,Atlanta,Georgia,30340.0,for_sale,70677.0
+250000000.0,19.0,33.0,,Beverly Hills,California,90210.0,for_sale,43753.0
+212500000.0,,,,Kosse,Texas,76653.0,for_sale,45196.0
+169000000.0,6.0,9.0,8255.0,New York City,New York,10022.0,for_sale,88180.0
+165000000.0,14.0,27.0,56500.0,Los Angeles,California,90024.0,for_sale,43753.0
