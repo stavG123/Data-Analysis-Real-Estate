@@ -1,4 +1,4 @@
-FIPS Code,State/Area,Year,Month,Total Civilian Non-Institutional Population in State/Area,Total Civilian Labor Force in State/Area,Percent (%) of State/Area's Population,Total Employment in State/Area,Percent (%) of Labor Force Employed in State/Area,Total Unemployment in State/Area,Percent (%) of Labor Force Unemployed in State/Area
+FIPS Code,State/Area,Year,Month,Total Civilian Non-Institutional Population in State/Area,Total Civilian Labor Force in State/Area,Percent (%) of State/Area's Population,Total Employment in State/Area,Percent (%) of Labor Force Employed in State/Area,Total Unemployment in State/Area,Percent(%)ofLaborForceUnemployedinState/Area
 01,Alabama,1976,01,"2,605,000   ","1,484,555   ",57.0   ,"1,386,023   ",53.2   ,"98,532   ",6.6   
 02,Alaska,1976,01,"232,000   ","160,183   ",69.0   ,"148,820   ",64.1   ,"11,363   ",7.1   
 04,Arizona,1976,01,"1,621,000   ","964,120   ",59.5   ,"865,871   ",53.4   ,"98,249   ",10.2   
